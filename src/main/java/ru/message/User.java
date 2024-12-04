@@ -7,7 +7,6 @@ public class User {
     private String password;
 
     public User () {}
-
     public User(String name, String nickname, int phoneNumber, String password) {
         this.name = name;
         this.nickname = nickname;
