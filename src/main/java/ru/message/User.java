@@ -14,36 +14,26 @@ public class User {
         this.password = password;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
 
     public String getNickname() {
         return nickname;
-    }
-
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
 
     public int getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String toString() {
+        return "Никнейм: " + nickname + ", Имя: " + name + ", Телефон: " + phoneNumber;
     }
 
 }
