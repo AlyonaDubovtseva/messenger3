@@ -4,10 +4,10 @@ public class Message {
     private User sender;
     private User recipient;
     private String text;
-    private int date;
-    private int time;
+    private String date;
+    private String time;
 
-    public Message(User sender, User recipient, String text, int date, int time) {
+    public Message(User sender, User recipient, String text, String date, String time) {
         this.sender = sender;
         this.recipient = recipient;
         this.text = text;
@@ -27,15 +27,15 @@ public class Message {
         return text;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public int getTime() {
+    public String getTime() {
         return time;
     }
 
     public String toString() {
-        return "[" + date + " " + time + "]" + sender.getNickname() + "to" + recipient.getNickname() + ":" + text;
+        return "[" + date + " " + time + "]" + sender.getNickname() + " to " + recipient.getNickname() + ":" + text;
     }
 }
