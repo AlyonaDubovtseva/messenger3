@@ -36,6 +36,6 @@ public class Message {
     }
 
     public String toString() {
-        return "[" + date + " " + time + "]" + sender.getNickname() + " to " + recipient.getNickname() + " : " + text;
+        return "[" + date + " " + time + "]" + sender.getNickname() + " to " + recipient.getNickname() + ":" + text;
     }
 }
